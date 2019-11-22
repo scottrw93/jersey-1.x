@@ -77,6 +77,11 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>7.2</version>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
@@ -229,8 +234,7 @@
                             com.sun.jersey.spi.scanning,
                             com.sun.jersey.spi.template,
                             com.sun.jersey.spi.uri.*,
-                            com.sun.research.ws.wadl,
-                            jersey.repackaged.org.objectweb.asm.*
+                            com.sun.research.ws.wadl
                         </Export-Package>
                         <Import-Package>
                             com.sun.jersey.core.osgi;resolution:=optional,
